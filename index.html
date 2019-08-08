@@ -1,0 +1,9 @@
+---
+layout: default
+titile: 我的Blog
+---
+{{ page.title }}
+最新文章
+{% for post in site.posts %}
+{{ page.date | date_to_string }}
+{% endfor %}
