@@ -8,7 +8,7 @@ subtitle: myBlog
 description:  
 keywords:
 author: XG
-language: cn
+language: zh-cn
 timezone:
 
 # URL
@@ -79,3 +79,19 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+search:                     # 实现搜索文章的功能
+  path: search.xml
+  field: post
+  format: html
+  limit: 100
+
+feed:                       # 实现博客订阅功能
+  type: atom
+  path: atom.xml
+  limit: 20
+
+sitemap:                    # 生成站点地图用于SEO优化
+  path: sitemap.xml
+
+baidusitmap:                # 同上
+  path: baidusitemap.xml
